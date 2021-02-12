@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+   int per;
+   printf("Enter score( 0-100 ): ");
+   scanf("%d", &per);
+
+   switch( per / 10 )
+   {
+
+   case 10:
+   case 9:
+   case 8:
+     printf("Grade: A");
+     break;
+   case 7:
+     printf("Grade: B");
+     break;
+   case 6:
+     printf("Grade: C");
+     break;
+   case 5:
+   case 4:
+     printf("Grade: D");
+     break;
+   case 3:
+   case 2:
+   case 1:
+   case 0:
+     printf("Grade: E");
+     break;
+    
+    
+
+   default:
+     printf("You have entered an invalid number!");
+     break;
+   }
+   return 0;
+}
